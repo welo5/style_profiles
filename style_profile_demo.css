@@ -6,6 +6,16 @@
     color: #1e1e2f !important;
     background-color: #f5f8fc !important;
 }
+.theme-entry .form::before {
+    content: "";
+    display: block;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGPyZex-V1Os0bQH2W6Ku8Sh0_FM-78madw&s'); /* Replace with your actual logo URL */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 80px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
 
 /* Main Form Container */
 .theme-entry .form {
