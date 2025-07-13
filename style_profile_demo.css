@@ -7,10 +7,9 @@
     background-color: #f5f8fc !important;
 }
 
-
 /* Main Form Container */
 .theme-entry .form {
-    padding: 24px !important;
+    padding: 2rem !important;
     background: #ffffff !important;
     border-radius: 10px !important;
     box-shadow: 0 4px 12px rgba(0, 63, 127, 0.08) !important;
@@ -19,51 +18,57 @@
 /* Labels */
 .theme-entry label.input-label {
     color: #003f7f !important;
-    font-size: 14px !important;
+    font-size: 0.9rem !important;
     font-weight: 600 !important;
     text-transform: uppercase !important;
-    margin-bottom: 10px !important;
+    margin: 1rem 0 0.5rem !important;
+    display: block !important;
 }
 
 /* Text Inputs */
 .theme-entry input[type="text"].input-control,
 .theme-entry input[type="password"].input-control,
 .theme-entry textarea.input-control {
-    height: 48px !important;
-    padding: 12px !important;
+    width: 100% !important;
+    padding: 0.75em 1em !important;
     border-radius: 6px !important;
     border: 1px solid #ccd6e0 !important;
     background-color: #ffffff !important;
-    font-size: 15px !important;
+    font-size: 1rem !important;
+    box-sizing: border-box !important;
     transition: border 0.3s ease-in-out !important;
+    margin-bottom: 1rem !important;
 }
 
 .theme-entry input[type="text"].input-control:focus,
 .theme-entry textarea.input-control:focus {
-    border: 1px solid #ff6f3c !important;
+    border-color: #ff6f3c !important;
     outline: none !important;
 }
 
 /* Dropdowns & Datepickers */
 .theme-entry div.input-control.select-box,
 .theme-entry div.input-control.datepicker {
-    height: 48px !important;
+    width: 100% !important;
+    padding: 0.75em 1em !important;
     border-radius: 6px !important;
     border: 1px solid #ccd6e0 !important;
     background-color: #ffffff !important;
-    padding: 8px !important;
+    margin-bottom: 1rem !important;
+    box-sizing: border-box !important;
 }
 
 /* Buttons */
 .theme-entry button {
     background: linear-gradient(to right, #003f7f, #ff6f3c) !important;
     color: #ffffff !important;
-    padding: 12px 24px !important;
+    padding: 0.75em 2em !important;
     font-weight: 600 !important;
-    font-size: 15px !important;
+    font-size: 1rem !important;
     border: none !important;
     border-radius: 6px !important;
     transition: background 0.3s ease !important;
+    margin-top: 1rem !important;
 }
 
 .theme-entry button:hover {
@@ -75,31 +80,24 @@
 .theme-entry .grid-header-wrapper .grid-header-text {
     background-color: #003f7f !important;
     color: #ffffff !important;
-    font-size: 16px !important;
-    padding: 12px !important;
+    font-size: 1.1rem !important;
+    padding: 0.75rem 1.25rem !important;
     text-align: center !important;
     border-radius: 6px 6px 0 0 !important;
-    
-}
-
-.theme-entry .panel-header-wrapper .panel-header-text {
+    line-height: 1.4 !important;
     white-space: normal !important;
+    word-wrap: break-word !important;
     overflow: visible !important;
     text-overflow: unset !important;
-    height: auto !important;
-    line-height: 1.4 !important;
-    word-wrap: break-word !important;
-    padding: 14px 20px !important;
-    display: block !important;
 }
-
 
 /* Tabs */
 .theme-entry .tab-box ul.tab-box-tabs li a.tab {
     background-color: #f0f4fa !important;
     color: #003f7f !important;
     font-weight: 600 !important;
-    font-size: 14px !important;
+    font-size: 0.95rem !important;
+    padding: 0.5em 1em !important;
     border-bottom: 2px solid transparent !important;
     transition: all 0.3s ease-in-out !important;
 }
@@ -120,7 +118,7 @@
     width: 28px !important;
     height: 28px !important;
     color: white !important;
-    font-size: 14px !important;
+    font-size: 0.9rem !important;
     font-weight: bold !important;
     text-align: center !important;
     line-height: 28px !important;
@@ -143,15 +141,15 @@
 /* Responsive */
 @media screen and (max-width: 640px) {
     .theme-entry .form {
-        padding: 16px !important;
+        padding: 1rem !important;
     }
 
     .theme-entry input[type="text"].input-control {
-        font-size: 14px !important;
+        font-size: 0.95rem !important;
     }
 
     .theme-entry button {
         width: 100% !important;
-        padding: 12px 0 !important;
+        padding: 0.75em 0 !important;
     }
 }
