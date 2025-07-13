@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
     header.style.display = 'flex';
     header.style.alignItems = 'center';
     header.style.justifyContent = 'flex-start';
-    header.style.backgroundColor = '#f5f8fc';
+    header.style.background = 'linear-gradient(to right, #003f7f, #ff6f3c)'; // 🎨 Gradient here
     header.style.padding = '12px 24px';
     header.style.borderBottom = '2px solid #003f7f';
     header.style.marginBottom = '8px';
 
     // Add logo image
     const logo = document.createElement('img');
-    logo.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_Bank.svg/200px-Logo_Bank.svg.png'; // ✅ Replace with your logo
+    logo.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGPyZex-V1Os0bQH2W6Ku8Sh0_FM-78madw&s'; // ✅ Replace if needed
     logo.alt = 'Bank Logo';
     logo.style.height = '40px';
     logo.style.marginRight = '16px';
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     label.textContent = 'Your Bank Portal';
     label.style.fontSize = '18px';
     label.style.fontWeight = '600';
-    label.style.color = '#003f7f';
+    label.style.color = '#ffffff';
     label.style.fontFamily = "'Inter', sans-serif";
 
     // Append logo and label to header
