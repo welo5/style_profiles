@@ -1,92 +1,128 @@
-/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+/* Root Theme */
 .theme-entry {
     font-family: 'Inter', sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
+    color: #1e1e2f;
+    background-color: #f3f6fa;
 }
 
-/* Form Container */
+/* Main Form Container */
 .theme-entry .form {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 68, 128, 0.1);
 }
 
 /* Labels */
 .theme-entry label.input-label {
-    color: #004080;
-    font-weight: 600;
+    color: #003f7f;
     font-size: 14px;
+    font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-/* Text Input */
+/* Text Inputs */
 .theme-entry input[type="text"].input-control,
 .theme-entry input[type="password"].input-control,
 .theme-entry textarea.input-control {
     height: 48px;
-    padding: 0 12px;
-    border: 1px solid #ced4da;
+    padding: 12px;
     border-radius: 6px;
-    font-size: 16px;
+    border: 1px solid #ccd6e0;
     background-color: #ffffff;
+    font-size: 15px;
+    transition: border 0.3s ease-in-out;
 }
 
-/* Dropdowns and DatePickers */
+.theme-entry input[type="text"].input-control:focus,
+.theme-entry textarea.input-control:focus {
+    border: 1px solid #ff6f3c;
+    outline: none;
+}
+
+/* Dropdowns & Datepickers */
 .theme-entry div.input-control.select-box,
 .theme-entry div.input-control.datepicker {
     height: 48px;
     border-radius: 6px;
-    border: 1px solid #ced4da;
+    border: 1px solid #ccd6e0;
     background-color: #ffffff;
+}
+
+/* Buttons */
+.theme-entry button {
+    background: linear-gradient(to right, #003f7f, #ff6f3c);
+    color: #ffffff;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.theme-entry button:hover {
+    background: linear-gradient(to right, #002b5c, #e85d27);
 }
 
 /* Panels & Grids */
 .theme-entry .panel-header-wrapper .panel-header-text,
 .theme-entry .grid-header-wrapper .grid-header-text {
-    background-color: #004080;
+    background-color: #003f7f;
     color: #ffffff !important;
-    text-align: center;
     font-size: 16px;
-    padding: 10px;
+    padding: 12px;
+    text-align: center;
     border-radius: 6px 6px 0 0;
-}
-
-/* Buttons */
-.theme-entry button {
-    background-color: #004080;
-    color: #fff;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-.theme-entry button:hover {
-    background-color: #0059b3;
 }
 
 /* Tabs */
 .theme-entry .tab-box ul.tab-box-tabs li a.tab {
-    background-color: transparent;
-    color: #004080;
+    background-color: #f0f4fa;
+    color: #003f7f;
     font-weight: 600;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
 
 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected {
-    background-color: #e6f0ff;
-    border-bottom: 2px solid #004080;
+    background-color: #fff5f0;
+    border-bottom: 2px solid #ff6f3c;
+    color: #ff6f3c;
 }
 
-/* Responsive Adjustments */
+.theme-entry .tab-box ul.tab-box-tabs a.tab:hover {
+    background-color: #e6f0ff;
+}
+
+/* Active Tab Step Circle */
+.theme-entry .tab-box ul.tab-box-tabs a.tab:before {
+    content: counter(li-count) '\00000a';
+    width: 28px;
+    height: 28px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    background: #ff6f3c;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected:before {
+    background: #003f7f;
+}
+
+/* Responsive */
 @media screen and (max-width: 640px) {
     .theme-entry .form {
-        padding: 10px;
+        padding: 16px;
     }
 
     .theme-entry input[type="text"].input-control {
