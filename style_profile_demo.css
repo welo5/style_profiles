@@ -17,6 +17,16 @@
     margin-bottom: 20px;
 }
 
+.theme-entry .form-header {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGPyZex-V1Os0bQH2W6Ku8Sh0_FM-78madw&s');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    height: 80px;
+    padding-left: 100px; /* Adds space so text doesn’t overlap */
+}
+
+
 /* Main Form Container */
 .theme-entry .form {
     padding: 24px !important;
