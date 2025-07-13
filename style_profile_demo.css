@@ -1,0 +1,95 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.theme-entry {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Form Container */
+.theme-entry .form {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Labels */
+.theme-entry label.input-label {
+    color: #004080;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/* Text Input */
+.theme-entry input[type="text"].input-control,
+.theme-entry input[type="password"].input-control,
+.theme-entry textarea.input-control {
+    height: 48px;
+    padding: 0 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+/* Dropdowns and DatePickers */
+.theme-entry div.input-control.select-box,
+.theme-entry div.input-control.datepicker {
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+}
+
+/* Panels & Grids */
+.theme-entry .panel-header-wrapper .panel-header-text,
+.theme-entry .grid-header-wrapper .grid-header-text {
+    background-color: #004080;
+    color: #ffffff !important;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+}
+
+/* Buttons */
+.theme-entry button {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.theme-entry button:hover {
+    background-color: #0059b3;
+}
+
+/* Tabs */
+.theme-entry .tab-box ul.tab-box-tabs li a.tab {
+    background-color: transparent;
+    color: #004080;
+    font-weight: 600;
+}
+
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected {
+    background-color: #e6f0ff;
+    border-bottom: 2px solid #004080;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 640px) {
+    .theme-entry .form {
+        padding: 10px;
+    }
+
+    .theme-entry input[type="text"].input-control {
+        font-size: 14px;
+    }
+}
