@@ -79,7 +79,20 @@
     padding: 12px !important;
     text-align: center !important;
     border-radius: 6px 6px 0 0 !important;
+    
 }
+
+.theme-entry .panel-header-wrapper .panel-header-text {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    height: auto !important;
+    line-height: 1.4 !important;
+    word-wrap: break-word !important;
+    padding: 14px 20px !important;
+    display: block !important;
+}
+
 
 /* Tabs */
 .theme-entry .tab-box ul.tab-box-tabs li a.tab {
