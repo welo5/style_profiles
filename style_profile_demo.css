@@ -2,142 +2,142 @@
 
 /* Root Theme */
 .theme-entry {
-    font-family: 'Inter', sans-serif;
-    color: #1e1e2f;
-    background-color: #f5f8fc;
+    font-family: 'Inter', sans-serif !important;
+    color: #1e1e2f !important;
+    background-color: #f5f8fc !important;
 }
 
 /* Main Form Container */
 .theme-entry .form {
-    padding: 24px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 63, 127, 0.08);
+    padding: 24px !important;
+    background: #ffffff !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 63, 127, 0.08) !important;
 }
 
 /* Labels */
 .theme-entry label.input-label {
-    color: #003f7f;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    color: #003f7f !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 10px !important;
 }
 
 /* Text Inputs */
 .theme-entry input[type="text"].input-control,
 .theme-entry input[type="password"].input-control,
 .theme-entry textarea.input-control {
-    height: 48px;
-    padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #ccd6e0;
-    background-color: #ffffff;
-    font-size: 15px;
-    transition: border 0.3s ease-in-out;
+    height: 48px !important;
+    padding: 12px !important;
+    border-radius: 6px !important;
+    border: 1px solid #ccd6e0 !important;
+    background-color: #ffffff !important;
+    font-size: 15px !important;
+    transition: border 0.3s ease-in-out !important;
 }
 
 .theme-entry input[type="text"].input-control:focus,
 .theme-entry textarea.input-control:focus {
-    border: 1px solid #ff6f3c;
-    outline: none;
+    border: 1px solid #ff6f3c !important;
+    outline: none !important;
 }
 
 /* Dropdowns & Datepickers */
 .theme-entry div.input-control.select-box,
 .theme-entry div.input-control.datepicker {
-    height: 48px;
-    border-radius: 6px;
-    border: 1px solid #ccd6e0;
-    background-color: #ffffff;
-    padding: 8px;
+    height: 48px !important;
+    border-radius: 6px !important;
+    border: 1px solid #ccd6e0 !important;
+    background-color: #ffffff !important;
+    padding: 8px !important;
 }
 
 /* Buttons */
 .theme-entry button {
-    background: linear-gradient(to right, #003f7f, #ff6f3c);
-    color: #ffffff;
-    padding: 12px 24px;
-    font-weight: 600;
-    font-size: 15px;
-    border: none;
-    border-radius: 6px;
-    transition: background 0.3s ease;
+    background: linear-gradient(to right, #003f7f, #ff6f3c) !important;
+    color: #ffffff !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    transition: background 0.3s ease !important;
 }
 
 .theme-entry button:hover {
-    background: linear-gradient(to right, #002b5c, #e85428);
+    background: linear-gradient(to right, #002b5c, #e85428) !important;
 }
 
 /* Panels & Grid Headers */
 .theme-entry .panel-header-wrapper .panel-header-text,
 .theme-entry .grid-header-wrapper .grid-header-text {
-    background-color: #003f7f;
+    background-color: #003f7f !important;
     color: #ffffff !important;
-    font-size: 16px;
-    padding: 12px;
-    text-align: center;
-    border-radius: 6px 6px 0 0;
+    font-size: 16px !important;
+    padding: 12px !important;
+    text-align: center !important;
+    border-radius: 6px 6px 0 0 !important;
 }
 
 /* Tabs */
 .theme-entry .tab-box ul.tab-box-tabs li a.tab {
-    background-color: #f0f4fa;
-    color: #003f7f;
-    font-weight: 600;
-    font-size: 14px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease-in-out;
+    background-color: #f0f4fa !important;
+    color: #003f7f !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    border-bottom: 2px solid transparent !important;
+    transition: all 0.3s ease-in-out !important;
 }
 
 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected {
-    background-color: #fff5f0;
-    border-bottom: 3px solid #ff6f3c;
-    color: #ff6f3c;
+    background-color: #fff5f0 !important;
+    border-bottom: 3px solid #ff6f3c !important;
+    color: #ff6f3c !important;
 }
 
 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover {
-    background-color: #e6f0ff;
+    background-color: #e6f0ff !important;
 }
 
 /* Tab Step Circles */
 .theme-entry .tab-box ul.tab-box-tabs a.tab:before {
-    content: counter(li-count) '\00000a';
-    width: 28px;
-    height: 28px;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 28px;
-    border-radius: 50%;
-    background: #ff6f3c;
-    display: inline-block;
-    margin-right: 8px;
+    content: counter(li-count) '\00000a' !important;
+    width: 28px !important;
+    height: 28px !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    line-height: 28px !important;
+    border-radius: 50% !important;
+    background: #ff6f3c !important;
+    display: inline-block !important;
+    margin-right: 8px !important;
 }
 
 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected:before {
-    background: #003f7f;
+    background: #003f7f !important;
 }
 
 /* Watermarks */
 .theme-entry .input-control-watermark {
-    font-style: italic;
-    color: #999999;
+    font-style: italic !important;
+    color: #999999 !important;
 }
 
 /* Responsive */
 @media screen and (max-width: 640px) {
     .theme-entry .form {
-        padding: 16px;
+        padding: 16px !important;
     }
 
     .theme-entry input[type="text"].input-control {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .theme-entry button {
-        width: 100%;
-        padding: 12px 0;
+        width: 100% !important;
+        padding: 12px 0 !important;
     }
 }
