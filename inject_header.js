@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     header.style.display = 'flex';
     header.style.alignItems = 'center';
     header.style.justifyContent = 'flex-start';
-    header.style.background = 'linear-gradient(to right, #003f7f, #ff6f3c)'; // 🎨 Gradient here
+    header.style.background = 'linear-gradient(to left, #003f7f, #ff6f3c)'; // 🎨 Gradient here
     header.style.padding = '12px 24px';
     header.style.borderBottom = '2px solid #003f7f';
     header.style.marginBottom = '8px';
