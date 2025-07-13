@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add label next to logo
     const label = document.createElement('span');
-    label.textContent = 'Expense Claim Form';
+    label.textContent = 'Expense Claim';
     label.style.fontSize = '18px';
     label.style.fontWeight = '600';
     label.style.color = '#ffffff';
