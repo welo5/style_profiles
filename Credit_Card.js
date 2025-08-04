@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Get the title and sanitize it by removing the word "Form" (case-insensitive)
-    let pageTitle = 'Workflow';
+    let pageTitle = document.title || 'Workflow';
     pageTitle = pageTitle.replace(/\bform\b/i, '').trim(); // Remove "Form" (any case)
 
     // Remove any previously injected header
