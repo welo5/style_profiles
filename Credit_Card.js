@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Dynamically get the <title> tag value
-    const pageTitle = document.title || 'Workflow test Form';
+    // Get the title and sanitize it by removing the word "Form" (case-insensitive)
+    let pageTitle = document.title || 'Workflow';
+    pageTitle = pageTitle.replace(/\bform\b/i, '').trim(); // Remove "Form" (any case)
 
-    // Remove any previously injected header (avoid duplication)
+    // Remove any previously injected header
     const existingHeader = document.getElementById('custom-header');
     if (existingHeader) {
         existingHeader.remove();
     }
 
-    // Create header container
+    // Create header
     const header = document.createElement('div');
     header.id = 'custom-header';
     header.style.cssText = `
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     logo.alt = 'Logo';
     logo.style.cssText = 'height: 60px; margin-right: 20px;';
 
-    // Title from <title> tag
+    // Title
     const label = document.createElement('span');
     label.textContent = pageTitle;
     label.style.cssText = `
@@ -43,11 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
         font-family: 'Inter', sans-serif;
     `;
 
-    // Assemble and insert
     header.appendChild(logo);
     header.appendChild(label);
     document.body.insertBefore(header, document.body.firstChild);
 
-    // Push body content below the header
     document.body.style.paddingTop = '90px';
 });
