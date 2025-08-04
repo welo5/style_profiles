@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Dynamically get the <title> tag value
-    const pageTitle = document.title || 'Workflow Form';
+    const pageTitle = document.title || 'Workflow test Form';
 
     // Remove any previously injected header (avoid duplication)
     const existingHeader = document.getElementById('custom-header');
